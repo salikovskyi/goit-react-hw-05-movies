@@ -52,7 +52,7 @@ const MoviePage = () => {
     }
 
    
-// console.log(movieToFind);
+
 return (
     <section>
       <div >

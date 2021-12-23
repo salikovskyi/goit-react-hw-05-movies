@@ -11,6 +11,7 @@ const Reviews = ({id}) => {
             const {data} = await moviesApi.getMovieReviews(id);
       
             setReviews(data.results)
+    console.log(data)
         }
         getReview()
     },[id]);
@@ -21,7 +22,6 @@ const Reviews = ({id}) => {
             <p className={css.content}>{content}</p>
         </li>
     ))
-    // console.log(reviews.results);
     return(
         <div>
             {reviews?.length > 0 ? (<ul className={css.list}>

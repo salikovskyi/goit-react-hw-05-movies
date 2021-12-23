@@ -1,6 +1,10 @@
 import { useState, useEffect } from "react"
 import moviesApi from '../../services/fetchApi'
 import css from './Cast.module.css'
+
+
+
+
 const MovieCast =({ id }) => {
     const [cast, setCast] = useState([])
 
@@ -11,7 +15,6 @@ const MovieCast =({ id }) => {
             setCast(data.cast)
         }
         getCast()
-        // console.log(cast);
     },[id]);
 
     const element = cast.map(({id, profile_path, original_name, character }) => (
