@@ -1,0 +1,93 @@
+.list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    justify-content: space-between;
+    padding: 50px 0 ;
+}
+
+.link {
+    text-decoration: none ;
+    color: black;
+        /* flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
+        margin-left: 30px;
+        margin-top: 30px;
+        --grid-item: 4; */
+      transition: 0.5s;
+      margin-bottom: 50px;
+      /* border: 1px red  solid; */
+}
+.link:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+
+.text {
+
+    font-size: 24px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+.image {
+    width: 300px;
+    height: 450px;
+    margin-top: 10px;
+}
+
+.input {
+    display: inline-block;
+    width: 190px;
+    font: inherit;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    padding-left: 4px;
+    padding-right: 4px;
+
+  }
+  
+  .input::placeholder {
+    font: inherit;
+    font-size: 18px;
+  }
+
+  .button {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    border: 0;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/751/751463.png');
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.6;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .button:hover {
+    opacity: 1;
+  }
+
+
+    
+.form {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    width: max-content;
+    align-items: center;
+    padding: 30px 0;
+  }
+
+ 
