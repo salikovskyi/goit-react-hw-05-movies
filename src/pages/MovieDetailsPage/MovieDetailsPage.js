@@ -38,7 +38,7 @@ const MovieDatailsPage = () => {
   return (
       
     <div className={css.wrapper}>
-        <div>
+        <div className={css.lopa}>
         {movie && <>
       <div>
         <img src={
@@ -50,16 +50,19 @@ const MovieDatailsPage = () => {
       <div>
           <h2 className={css.title}>{movie?.data.original_title}</h2>
           <p className={css.description}>Use score: <span className={css.span}>{movie?.data.vote_average}</span></p>
-          <h2 className={css.title}>Overview</h2>
+          <h2 className={css.subtitle}>Overview</h2>
           <p className={`${css.overview} ${css.description}`}>{movie?.data.overview ? movie.data.overview : "No overwies yet"}</p>
-          <h2 className={css.title}>Genres</h2>
+          <h2 className={css.subtitle}>Genres</h2>
           <p className={css.description}>{movie?.data.genres.map((genre) => genre.name).join(", ")}</p>
-      </div>
-      <div className={css.kurva}>
+          <div className={css.kurva}>
         <NavLink to={`/movies/${id}/cast`} className={css.link} activeClassName={css.active}>cast</NavLink>
         <NavLink to={`/movies/${id}/reviews`} className={css.link} activeClassName={css.active}>reviews</NavLink>
+        
         </div>
-      </> || <h1>НЕ ПОЛУЧИЛОСЬ ЗАГРУЗИТЬ ФИЛЬМ</h1>
+     
+      </div>
+
+      </> || <h1 className={css.notitle}>НЕ ПОЛУЧИЛОСЬ ЗАГРУЗИТЬ ФИЛЬМ</h1>
 
 }
         </div>

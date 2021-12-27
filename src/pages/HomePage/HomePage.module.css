@@ -11,7 +11,7 @@
         flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
         margin-left: 30px;
         margin-top: 30px;
-        --grid-item: 4;
+        --grid-item: 1;
       
       margin-bottom: 50px;
       transition: 0.5s;
@@ -34,7 +34,7 @@
 .title {
     font-size: 40px;
     font-weight: 700;
-    margin: 20px 0;
+    margin: 40px 0 20px 0;
 }
 
 .image {
@@ -42,3 +42,23 @@
     height: 450px;
     margin-top: 10px;
 }
+
+@media screen and (min-width: 768px) {
+    .link {
+      --grid-item: 2;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .link {
+      --grid-item: 3;
+    }
+  }
+
+  @media screen and (min-width: 1300px) {
+    .link {
+      --grid-item: 4;
+    }
+  }
+  
+  

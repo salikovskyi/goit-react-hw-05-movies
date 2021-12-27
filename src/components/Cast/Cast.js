@@ -17,6 +17,14 @@ const MovieCast =({ id }) => {
         getCast()
     },[id]);
 
+    function backToTop() {
+        if (window.pageYOffset > 0) {
+          window.scrollBy(0, -80);
+          setTimeout(backToTop, 0);
+        }
+      }
+      
+
     const element = cast.map(({id, profile_path, original_name, character }) => (
         <li key={id} className={css.item}>
             <img src={
@@ -35,6 +43,9 @@ const MovieCast =({ id }) => {
             <ul className={css.list}>
                 {cast && element}
             </ul>
+            {cast?.length > 10 ?  <button className={css.back_to_top} onClick={backToTop}>↑</button> : null}
+           
+
         </div>
     )
 }

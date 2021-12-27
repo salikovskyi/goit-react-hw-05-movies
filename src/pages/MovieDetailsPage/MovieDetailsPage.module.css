@@ -1,9 +1,14 @@
 .title {
     font-size: 30px;
-    font-weight: 500;
-    margin: 15px 0;
+    font-weight: 700;
+    margin: 30px 0;
 }
 
+.subtitle {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 20px 0;
+}
 .description {
     font-size: 18px;
 }
@@ -12,11 +17,23 @@
     background-color: #F89F05;
     border-radius: 30px;
     padding: 5px 20px;
+    font-weight: 700;
 }
 
 .wrapper {
     padding: 50px 0;
 }
+
+  
+  @media screen and (min-width: 1200px) {
+    .lopa {
+      display: flex;
+      margin: 0 200px;
+      padding: 50px;
+      justify-content: center;
+    }
+  }
+
 
 .overview {
     width: 60%;
@@ -63,6 +80,7 @@
     justify-content: space-around;
     font-size: 30px;
     font-weight: 700;
+    padding-top: 40px;
   }
   
   .active {
